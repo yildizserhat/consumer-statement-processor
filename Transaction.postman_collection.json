@@ -1,0 +1,70 @@
+{
+	"info": {
+		"_postman_id": "a37f0aac-1bc2-4cd4-ae4a-c00154fab801",
+		"name": "Transaction",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "8238721"
+	},
+	"item": [
+		{
+			"name": "Upload CSV",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/Users/serhatyildiz/Development/Java/consumer-statement-processor/src/main/resources/records.csv"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8080/v1/transactions/reports",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"transactions",
+						"reports"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Upload XML",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/Users/serhatyildiz/Development/Java/consumer-statement-processor/src/main/resources/records.csv"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8080/v1/transactions/reports",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"transactions",
+						"reports"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
